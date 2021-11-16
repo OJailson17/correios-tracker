@@ -1,0 +1,11 @@
+{
+  "name": "correios-tracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/OJailson17/correios-tracker.git",
+  "author": "OJailson17 <JaylsonO17@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}
