@@ -31,20 +31,15 @@ export const routes = (app: Application) => {
       };
 
       try {
-        const data = await needle.post(
-          `${API_URL}`,
-          body,
-          options,
-          (err, response) => {
-            if (err) {
-              res.json({ err });
-            }
-
-            res.json(response.body);
+        needle.post(`${API_URL}`, body, options, (err, response) => {
+          if (err) {
+            res.json({ err });
           }
-        );
+
+          res.json(response.body);
+        });
       } catch (error) {
-        console.log(error);
+        res.json({ error });
       }
     }
   );
