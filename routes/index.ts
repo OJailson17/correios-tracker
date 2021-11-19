@@ -8,13 +8,16 @@ const router = Router();
 // Env variables
 const { API_URL } = config;
 
+const onlyStatus200 = (req: Request, res: Response) =>
+  res === res.json({ message: "Erro ao processar sua solicitação" });
+
 // Init Cache
 const cache = apiCache.middleware;
 
 export const routes = (app: Application) => {
   app.post(
     "/api/v1/correios",
-    cache("100 minutes"),
+    cache("2 minutes"),
     async (req: Request, res: Response) => {
       const { code } = req.body;
 
