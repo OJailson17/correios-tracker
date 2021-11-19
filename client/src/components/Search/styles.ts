@@ -27,14 +27,15 @@ export const SearchBar = styled.div`
 
   input {
     width: 100%;
-    height: 35px;
+    height: 40px;
     border-radius: 15px;
     border: 2px solid rgba(0, 0, 0, 0.65);
-    padding-left: 5px;
+    padding-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 500;
+    outline: none;
 
     &::placeholder {
       font-size: 13px;
@@ -43,12 +44,12 @@ export const SearchBar = styled.div`
   }
 
   div.search-btn {
-    width: 50px;
+    width: 60px;
     height: 100%;
     background-color: yellow;
     position: absolute;
-    right: -4px;
-    border-radius: 0 21px 21px 0;
+    right: 0;
+    border-radius: 0 15px 15px 0;
     display: flex;
     justify-content: center;
     align-items: center;
