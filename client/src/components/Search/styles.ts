@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90%;
-  max-width: 955px;
+  width: 100%;
   display: block;
   margin: 0 auto;
+  margin-bottom: 55px;
 
   h2 {
     font-weight: 500;
@@ -17,7 +17,7 @@ export const Container = styled.div`
   }
 `;
 
-export const SearchBar = styled.div`
+export const SearchBar = styled.form`
   max-width: 955px;
   display: flex;
   position: relative;
@@ -43,12 +43,13 @@ export const SearchBar = styled.div`
     }
   }
 
-  div.search-btn {
+  button.search-btn {
     width: 60px;
     height: 100%;
-    background-color: yellow;
+    background-color: #ffd400;
     position: absolute;
     right: 0;
+    border: none;
     border-radius: 0 15px 15px 0;
     display: flex;
     justify-content: center;

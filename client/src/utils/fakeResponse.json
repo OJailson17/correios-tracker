@@ -1,0 +1,291 @@
+{
+  "objeto": [
+    {
+      "categoria": "SEDEX",
+      "evento": [
+        {
+          "cepDestino": "46810000",
+          "criacao": "16082021140939",
+          "data": "16/08/2021",
+          "dataPostagem": "11/08/2021",
+          "descricao": "Objeto entregue ao destinatário",
+          "diasUteis": "0",
+          "hora": "14:09",
+          "prazoGuarda": "0",
+          "recebedor": {},
+          "status": "01",
+          "tipo": "BDI",
+          "unidade": {
+            "cidade": "Utinga",
+            "codigo": "46810970",
+            "endereco": {
+              "bairro": "CENTRO",
+              "cep": "46810970",
+              "codigo": "23488",
+              "latitude": "-12.0830135",
+              "localidade": "Utinga",
+              "logradouro": "PRACA ANTONIO MUNIZ",
+              "longitude": "-41.094933",
+              "numero": "29",
+              "uf": "BA"
+            },
+            "local": "AC UTINGA",
+            "sto": "00002793",
+            "tipounidade": "Agência dos Correios",
+            "uf": "BA"
+          }
+        },
+        {
+          "cepDestino": "46810000",
+          "criacao": "16082021140853",
+          "data": "16/08/2021",
+          "dataPostagem": "11/08/2021",
+          "descricao": "Objeto aguardando retirada no endereço indicado",
+          "detalhe": "Para retirá-lo, é preciso informar o código do objeto e apresentar documentação que comprove ser o destinatário ou pessoa por ele oficialmente autorizada.",
+          "diasUteis": "0",
+          "hora": "14:08",
+          "prazoGuarda": "1",
+          "status": "01",
+          "tipo": "LDI",
+          "unidade": {
+            "cidade": "Utinga",
+            "codigo": "46810970",
+            "endereco": {
+              "bairro": "CENTRO",
+              "cep": "46810970",
+              "codigo": "23488",
+              "latitude": "-12.0830135",
+              "localidade": "Utinga",
+              "logradouro": "PRACA ANTONIO MUNIZ",
+              "longitude": "-41.094933",
+              "numero": "29",
+              "uf": "BA"
+            },
+            "local": "AC UTINGA",
+            "sto": "00002793",
+            "tipounidade": "Agência dos Correios",
+            "uf": "BA"
+          }
+        },
+        {
+          "cepDestino": "46810000",
+          "criacao": "16082021110403",
+          "data": "16/08/2021",
+          "dataPostagem": "11/08/2021",
+          "descricao": "Objeto não entregue - carteiro não atendido",
+          "detalhe": "Por favor, aguarde. Será realizada nova tentativa de entrega",
+          "diasUteis": "0",
+          "hora": "11:04",
+          "prazoGuarda": "0",
+          "recebedor": {},
+          "status": "20",
+          "tipo": "BDE",
+          "unidade": {
+            "cidade": "Utinga",
+            "codigo": "46810970",
+            "endereco": {
+              "bairro": "CENTRO",
+              "cep": "46810970",
+              "codigo": "23488",
+              "latitude": "-12.0830135",
+              "localidade": "Utinga",
+              "logradouro": "PRACA ANTONIO MUNIZ",
+              "longitude": "-41.094933",
+              "numero": "29",
+              "uf": "BA"
+            },
+            "local": "AC UTINGA",
+            "sto": "00002793",
+            "tipounidade": "Agência dos Correios",
+            "uf": "BA"
+          }
+        },
+        {
+          "cepDestino": "46810000",
+          "criacao": "16082021092406",
+          "data": "16/08/2021",
+          "dataPostagem": "11/08/2021",
+          "descricao": "Objeto saiu para entrega ao destinatário",
+          "detalheOEC": {
+            "carteiro": "80879462",
+            "distrito": "001",
+            "lista": "105100000348",
+            "unidade": "46810970"
+          },
+          "diasUteis": "0",
+          "hora": "09:24",
+          "prazoGuarda": "0",
+          "status": "01",
+          "tipo": "OEC",
+          "unidade": {
+            "cidade": "Utinga",
+            "codigo": "46810970",
+            "endereco": {
+              "bairro": "CENTRO",
+              "cep": "46810970",
+              "codigo": "23488",
+              "latitude": "-12.0830135",
+              "localidade": "Utinga",
+              "logradouro": "PRACA ANTONIO MUNIZ",
+              "longitude": "-41.094933",
+              "numero": "29",
+              "uf": "BA"
+            },
+            "local": "AC UTINGA",
+            "sto": "00002793",
+            "tipounidade": "Agência dos Correios",
+            "uf": "BA"
+          }
+        },
+        {
+          "cepDestino": "46810000",
+          "criacao": "12082021204324",
+          "data": "12/08/2021",
+          "dataPostagem": "11/08/2021",
+          "descricao": "Objeto em trânsito - por favor aguarde",
+          "destino": [
+            {
+              "bairro": "CENTRO",
+              "cidade": "Utinga",
+              "codigo": "46810970",
+              "endereco": {
+                "bairro": "CENTRO",
+                "cep": "46810970",
+                "codigo": "23488",
+                "latitude": "-12.0830135",
+                "localidade": "Utinga",
+                "logradouro": "PRACA ANTONIO MUNIZ",
+                "longitude": "-41.094933",
+                "numero": "29",
+                "uf": "BA"
+              },
+              "local": "AC UTINGA",
+              "uf": "BA"
+            }
+          ],
+          "diasUteis": "0",
+          "hora": "20:43",
+          "prazoGuarda": "0",
+          "status": "01",
+          "tipo": "DO",
+          "unidade": {
+            "cidade": "SALVADOR",
+            "codigo": "41400971",
+            "endereco": {
+              "bairro": "CEASA",
+              "cep": "41400977",
+              "codigo": "484976",
+              "localidade": "SALVADOR",
+              "logradouro": "VIA BA-535",
+              "numero": "991",
+              "uf": "BA"
+            },
+            "local": "CTCE SALVADOR",
+            "sto": "00431083",
+            "tipounidade": "Unidade de Tratamento",
+            "uf": "BA"
+          }
+        },
+        {
+          "cepDestino": "46810000",
+          "criacao": "12082021073632",
+          "data": "12/08/2021",
+          "dataPostagem": "11/08/2021",
+          "descricao": "Objeto em trânsito - por favor aguarde",
+          "destino": [
+            {
+              "bairro": "CEASA",
+              "cidade": "SALVADOR",
+              "codigo": "41400971",
+              "endereco": {
+                "bairro": "CEASA",
+                "cep": "41400977",
+                "codigo": "484976",
+                "localidade": "SALVADOR",
+                "logradouro": "VIA BA-535",
+                "numero": "991",
+                "uf": "BA"
+              },
+              "local": "CTCE SALVADOR",
+              "uf": "BA"
+            }
+          ],
+          "diasUteis": "0",
+          "hora": "07:36",
+          "prazoGuarda": "0",
+          "status": "01",
+          "tipo": "RO",
+          "unidade": {
+            "cidade": "SALVADOR",
+            "codigo": "41635971",
+            "endereco": {
+              "bairro": "ITAPUA",
+              "cep": "41635971",
+              "codigo": "318646",
+              "latitude": "-12.9440861",
+              "localidade": "SALVADOR",
+              "logradouro": "AVENIDA DORIVAL CAYMMI",
+              "longitude": "-38.3654442",
+              "numero": "85",
+              "uf": "BA"
+            },
+            "local": "AGF DUNAS DE ITAPUA",
+            "sto": "00235050",
+            "tipounidade": "Agência dos Correios",
+            "uf": "BA"
+          }
+        },
+        {
+          "cepDestino": "44640000",
+          "criacao": "11082021191341",
+          "data": "11/08/2021",
+          "dataPostagem": "11/08/2021",
+          "descricao": "Objeto postado após o horário limite da unidade",
+          "detalhe": "Sujeito a encaminhamento no próximo dia útil",
+          "diasUteis": "0",
+          "hora": "19:13",
+          "postagem": {
+            "ar": "N",
+            "cepdestino": "44640000",
+            "datapostagem": "01/01/1900 00:00:00",
+            "dataprogramada": "01/01/1900 00:00:00",
+            "dh": "N",
+            "mp": "N",
+            "peso": "0",
+            "prazotratamento": "0",
+            "volume": "0"
+          },
+          "prazoGuarda": "0",
+          "status": "09",
+          "tipo": "PO",
+          "unidade": {
+            "cidade": "SALVADOR",
+            "codigo": "41635971",
+            "endereco": {
+              "bairro": "ITAPUA",
+              "cep": "41635971",
+              "codigo": "318646",
+              "latitude": "-12.9440861",
+              "localidade": "SALVADOR",
+              "logradouro": "AVENIDA DORIVAL CAYMMI",
+              "longitude": "-38.3654442",
+              "numero": "85",
+              "uf": "BA"
+            },
+            "local": "AGF DUNAS DE ITAPUA",
+            "sto": "00235050",
+            "tipounidade": "Agência dos Correios",
+            "uf": "BA"
+          }
+        }
+      ],
+      "nome": "ETIQUETA LOGICA SEDEX",
+      "numero": "OP824609495BR",
+      "sigla": "OP"
+    }
+  ],
+  "pesquisa": "Lista de Objetos",
+  "quantidade": "1",
+  "resultado": "Todos os eventos",
+  "versao": "3.0"
+}
