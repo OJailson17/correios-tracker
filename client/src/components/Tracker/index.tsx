@@ -1,7 +1,4 @@
 import { Search } from "../Search";
-
-import DeliveredImg from "../../assets/delivered.svg";
-
 import { Container, TrackerDetails } from "./styles";
 import { useEvents } from "../../hooks/useEvents";
 import { getImage } from "../../utils/getImage";
@@ -15,7 +12,10 @@ export function Tracker() {
 
       {events.map((event) => (
         <TrackerDetails key={event.criacao}>
-          <img src={DeliveredImg} alt="Entrega realizada" />
+          <img
+            src={getImage(Number(event.status), event.tipo)}
+            alt="Status de entrega"
+          />
           <div>
             <span>{event.descricao}</span>
             <p>
