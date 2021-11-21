@@ -1,4 +1,4 @@
-import { Router, Application, Request, Response, response } from "express";
+import { Router, Application, Request, Response } from "express";
 import needle from "needle";
 import apiCache from "apicache";
 import config from "../config";
@@ -8,16 +8,13 @@ const router = Router();
 // Env variables
 const { API_URL } = config;
 
-const onlyStatus200 = (req: Request, res: Response) =>
-  res === res.json({ message: "Erro ao processar sua solicitação" });
-
 // Init Cache
 const cache = apiCache.middleware;
 
 export const routes = (app: Application) => {
   app.post(
     "/api/v1/correios",
-    cache("2 minutes"),
+    cache("150 minutes"),
     async (req: Request, res: Response) => {
       const { code } = req.body;
 
