@@ -18,7 +18,7 @@ export function Search() {
           <i className="fas fa-search"></i>
         </button>
       </SearchBar>
-      <span>Objeto: OP824609495BR</span>
+      {code ? <span>Objeto: {code}</span> : ""}
     </Container>
   );
 }
