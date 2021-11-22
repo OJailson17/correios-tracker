@@ -13,6 +13,7 @@ export function Search() {
           placeholder="Insira o código da encomenda"
           value={code}
           onChange={(e) => setCode(e.target.value)}
+          required
         />
         <button className="search-btn" type="submit">
           <i className="fas fa-search"></i>
