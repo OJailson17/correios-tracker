@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "nodemon index.ts",
-    "start": "node index.ts"
+    "start": "ts-node index.ts"
   },
   "dependencies": {
     "apicache": "^1.6.3",
