@@ -31,8 +31,8 @@ type EventType = {
       numero: string;
       uf: string;
     };
+    tipounidade: string;
   };
-  tipounidade: string;
   destino?: {
     bairro: string;
     cidade: string;

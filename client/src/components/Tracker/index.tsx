@@ -21,6 +21,17 @@ export function Tracker() {
             <p>
               {event.unidade.endereco.localidade} - {event.unidade.endereco.uf}
             </p>
+            {/* Se a opção destino existir */}
+            {event.destino ? (
+              <p>
+                para {event.destino[0].endereco.localidade} -{" "}
+                {event.destino[0].endereco.uf}
+              </p>
+            ) : (
+              ""
+            )}
+
+            {/* Se a opção detalhe existir */}
             {event.detalhe ? <span>{event.detalhe}</span> : ""}
             <p>
               {event.data} {event.hora}
