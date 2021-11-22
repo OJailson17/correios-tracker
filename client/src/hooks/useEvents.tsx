@@ -44,6 +44,7 @@ type EventType = {
       uf: string;
     };
   }[];
+  categoria?: string;
 };
 
 type CorreiosContextProps = {
@@ -51,6 +52,7 @@ type CorreiosContextProps = {
   code: string;
   setCode: Dispatch<SetStateAction<string>>;
   getCorreiosData: (event: FormEvent) => void;
+  showSpinner: boolean;
 };
 
 const CorreiosContext = createContext<CorreiosContextProps>(
@@ -60,23 +62,31 @@ const CorreiosContext = createContext<CorreiosContextProps>(
 export function CorreiosProvider({ children }: CorreiosProviderProps) {
   const [events, setEvents] = useState<EventType[]>([]);
   const [code, setCode] = useState("");
+  const [showSpinner, setShowSpinner] = useState(false);
 
   const getCorreiosData = async (event: FormEvent) => {
     event.preventDefault();
+    setShowSpinner(true);
 
     const response = await api.post(`/correios`, {
       code,
       type: "LS",
     });
     const { data } = await response;
-    const eventos = data.objeto[0].evento;
-    console.log(data.objeto[0].evento);
-    setEvents(eventos);
+    const eventos = data.objeto[0]?.evento;
+
+    if (eventos === undefined) {
+      setEvents(data.objeto);
+    } else {
+      setEvents(eventos);
+    }
+
+    setShowSpinner(false);
   };
 
   return (
     <CorreiosContext.Provider
-      value={{ events, code, setCode, getCorreiosData }}
+      value={{ events, code, setCode, getCorreiosData, showSpinner }}
     >
       {children}
     </CorreiosContext.Provider>

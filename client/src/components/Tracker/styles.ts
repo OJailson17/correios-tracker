@@ -6,11 +6,13 @@ export const Container = styled.main`
   margin: 0 auto;
   margin-top: 40px;
   position: relative;
-  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const TrackerDetails = styled.div`
-  /* background-color: #f9e27c; */
   width: 100%;
   display: flex;
   justify-content: start;
