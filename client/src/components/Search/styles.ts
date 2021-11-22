@@ -38,7 +38,7 @@ export const SearchBar = styled.form`
     outline: none;
 
     &::placeholder {
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 500;
     }
   }
