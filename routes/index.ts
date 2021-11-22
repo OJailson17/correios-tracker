@@ -9,7 +9,7 @@ const cache = apiCache.middleware;
 
 export const routes = (app: Application) => {
   // POST REQUESTS
-  app.post("/api/v1/correios", cache("150 minutes"), getEventsController);
+  app.post("/api/v1/correios", cache("1 minutes"), getEventsController);
 
   return app.use("/", router);
 };
