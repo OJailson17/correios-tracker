@@ -16,11 +16,7 @@
   },
   "scripts": {
     "dev": "nodemon index.ts",
-    "start": "ts-node index.ts",
-    "postinstall": "tsc"
-  },
-  "engines": {
-    "node": "14.18.1"
+    "start": "ts-node index.ts"
   },
   "dependencies": {
     "apicache": "^1.6.3",
