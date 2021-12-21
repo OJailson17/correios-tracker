@@ -6,8 +6,8 @@ import {
   SetStateAction,
   useContext,
   useState,
-} from "react";
-import { api } from "../services/api";
+} from 'react';
+import { api } from '../services/api';
 
 type CorreiosProviderProps = {
   children: ReactNode;
@@ -56,12 +56,12 @@ type CorreiosContextProps = {
 };
 
 const CorreiosContext = createContext<CorreiosContextProps>(
-  {} as CorreiosContextProps
+  {} as CorreiosContextProps,
 );
 
 export function CorreiosProvider({ children }: CorreiosProviderProps) {
   const [events, setEvents] = useState<EventType[]>([]);
-  const [code, setCode] = useState("");
+  const [code, setCode] = useState('');
   const [showSpinner, setShowSpinner] = useState(false);
 
   const getCorreiosData = async (event: FormEvent) => {
@@ -70,7 +70,7 @@ export function CorreiosProvider({ children }: CorreiosProviderProps) {
 
     const response = await api.post(`/correios`, {
       code,
-      type: "LS",
+      type: 'LS',
     });
     const { data } = await response;
     const eventos = data.objeto[0]?.evento;

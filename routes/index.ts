@@ -1,7 +1,7 @@
-import path from "path";
-import { Router, Application } from "express";
-import apiCache from "apicache";
-import { getEventsController } from "../controller/getEventsController";
+import path from 'path';
+import { Router, Application } from 'express';
+import apiCache from 'apicache';
+import { getEventsController } from '../controller/getEventsController';
 
 const router = Router();
 
@@ -10,11 +10,11 @@ const cache = apiCache.middleware;
 
 export const routes = (app: Application) => {
   // POST REQUESTS
-  app.post("/api/v1/correios", cache("0.3 minutes"), getEventsController);
+  app.post('/api/v1/correios', getEventsController);
 
-  app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
   });
 
-  return app.use("/", router);
+  return app.use('/', router);
 };
