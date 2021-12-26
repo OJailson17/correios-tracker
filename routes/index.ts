@@ -12,9 +12,5 @@ export const routes = (app: Application) => {
   // POST REQUESTS
   app.post('/api/v1/correios', getEventsController);
 
-  app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-  });
-
   return app.use('/', router);
 };
