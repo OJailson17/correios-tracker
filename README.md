@@ -10,3 +10,6 @@ Foi criado um backend para realizar as chamdas API e armazená-las em cache por 
 - Express
 - ReactJS + Typescript
 - Styled Components
+
+A aplicação foi retirada do ar por problemas na API. Mas você pode rodar na sua máquina fazendo apenas a inserção do link da API como uma variável ambiente.
+Nome da variável: API_URL.
